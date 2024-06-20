@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Adam Dudiewicz i Jan Gessek">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Iris model prediction</title>
+
+</head>
+<body>
+  <div class="fixed-background"></div>
+  <div class="search-container">
+    <h1>Iris model prediction</h1>
+    <form id="search-form" action="result" method="GET">
+      <input type="text" name="SepalLength" placeholder="SepalLengthCm"><br>
+      <input type="text" name="SepalWidth" placeholder="SepalWidthCm"><br>
+      <input type="text" name="PetalLength" placeholder="PetalLengthCm"><br>
+      <input type="text" name="PetalWidth" placeholder="PetalWidthCm"><br>
+      <input type="text" name="k" placeholder="(optional) k value for KNN)"><br>
+      <select name="model">
+        <option value="knn_model">K-Nearest Neighbours</option>
+        <option value="perceptron_model">Perceptron_model</option>
+      </select><br>
+      <input type="submit">
+    </form>
+  </div>
+</body>
+</html>
+
+
